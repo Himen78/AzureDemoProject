@@ -1,0 +1,46 @@
+latest: Pulling from selenium/node-chrome
+Digest: sha256:316d170ae80ad67767640b13944ff6f47ff9079c3dc7ca3b1193d193366c70bc
+Status: Downloaded newer image for selenium/node-chrome:latest
+Attaching to selenium-hub, dockerproject-master_chrome_1, dockerproject-master_firefox_1
+[32mselenium-hub    |[0m 2022-07-23 09:37:04,156 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
+[32mselenium-hub    |[0m 2022-07-23 09:37:04,164 INFO RPC interface 'supervisor' initialized
+[32mselenium-hub    |[0m 2022-07-23 09:37:04,164 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+[32mselenium-hub    |[0m 2022-07-23 09:37:04,166 INFO supervisord started with pid 8
+[32mselenium-hub    |[0m 2022-07-23 09:37:05,171 INFO spawned: 'selenium-grid-hub' with pid 10
+[32mselenium-hub    |[0m 09:37:06.022 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+[32mselenium-hub    |[0m 2022-07-23 09:37:06,025 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mselenium-hub    |[0m 09:37:06.028 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+[36mchrome_1        |[0m 2022-07-23 09:37:06,145 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[36mchrome_1        |[0m 2022-07-23 09:37:06,148 INFO RPC interface 'supervisor' initialized
+[36mchrome_1        |[0m 2022-07-23 09:37:06,148 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+[36mchrome_1        |[0m 2022-07-23 09:37:06,149 INFO supervisord started with pid 8
+[32mselenium-hub    |[0m 09:37:06.166 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://172.18.0.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://172.18.0.2:4443]
+[33mfirefox_1       |[0m 2022-07-23 09:37:06,200 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[33mfirefox_1       |[0m 2022-07-23 09:37:06,205 INFO RPC interface 'supervisor' initialized
+[33mfirefox_1       |[0m 2022-07-23 09:37:06,205 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+[33mfirefox_1       |[0m 2022-07-23 09:37:06,206 INFO supervisord started with pid 8
+[32mselenium-hub    |[0m 09:37:06.224 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://172.18.0.2:4442 and tcp://172.18.0.2:4443
+[32mselenium-hub    |[0m 09:37:06.247 INFO [UnboundZmqEventBus.<init>] - Sockets created
+[36mchrome_1        |[0m 2022-07-23 09:37:07,155 INFO spawned: 'xvfb' with pid 10
+[36mchrome_1        |[0m 2022-07-23 09:37:07,170 INFO spawned: 'vnc' with pid 11
+[36mchrome_1        |[0m 2022-07-23 09:37:07,183 INFO spawned: 'novnc' with pid 13
+[36mchrome_1        |[0m 2022-07-23 09:37:07,194 INFO spawned: 'selenium-node' with pid 15
+[33mfirefox_1       |[0m 2022-07-23 09:37:07,214 INFO spawned: 'xvfb' with pid 10
+[33mfirefox_1       |[0m 2022-07-23 09:37:07,224 INFO spawned: 'vnc' with pid 11
+[33mfirefox_1       |[0m 2022-07-23 09:37:07,235 INFO spawned: 'novnc' with pid 12
+[33mfirefox_1       |[0m 2022-07-23 09:37:07,243 INFO spawned: 'selenium-node' with pid 14
+[32mselenium-hub    |[0m 09:37:07.248 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+[36mchrome_1        |[0m 2022-07-23 09:37:07,273 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33mfirefox_1       |[0m 2022-07-23 09:37:07,285 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mchrome_1        |[0m SE_EVENT_BUS_HOST not set, exiting!
+[36mchrome_1        |[0m 2022-07-23 09:37:07,865 INFO exited: selenium-node (exit status 1; not expected)
+[33mfirefox_1       |[0m SE_EVENT_BUS_HOST not set, exiting!
+[33mfirefox_1       |[0m 2022-07-23 09:37:07,869 INFO exited: selenium-node (exit status 1; not expected)
+[36mchrome_1        |[0m 2022-07-23 09:37:08,223 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36mchrome_1        |[0m 2022-07-23 09:37:08,224 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36mchrome_1        |[0m 2022-07-23 09:37:08,224 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33mfirefox_1       |[0m 2022-07-23 09:37:08,224 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33mfirefox_1       |[0m 2022-07-23 09:37:08,224 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33mfirefox_1       |[0m 2022-07-23 09:37:08,227 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[32mselenium-hub    |[0m 09:37:08.421 INFO [Hub.execute] - Started Selenium Hub 4.3.0 (revision a4995e2c09*): http://172.18.0.2:4444
+Gracefully stopping... (press Ctrl+C again to force)
