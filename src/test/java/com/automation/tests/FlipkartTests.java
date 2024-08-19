@@ -10,7 +10,6 @@ public class FlipkartTests extends BaseTest {
 
     @Test
     public void testSearchForProduct() {
-        driver.get("https://www.flipkart.com");
         FlipkartHomePage homePage = new FlipkartHomePage(driver);
         homePage.searchFor("laptop");
 
@@ -21,7 +20,6 @@ public class FlipkartTests extends BaseTest {
 
     @Test
     public void testSearchForDifferentProduct() {
-        driver.get("https://www.flipkart.com");
         FlipkartHomePage homePage = new FlipkartHomePage(driver);
         homePage.searchFor("headphones");
 
@@ -32,7 +30,6 @@ public class FlipkartTests extends BaseTest {
 
     @Test
     public void testEmptySearch() {
-        driver.get("https://www.flipkart.com");
         FlipkartHomePage homePage = new FlipkartHomePage(driver);
         homePage.searchFor("");
         String currentUrl = driver.getCurrentUrl();

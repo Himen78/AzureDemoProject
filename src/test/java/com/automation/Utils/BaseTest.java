@@ -14,10 +14,11 @@ public class BaseTest {
     protected WebDriver driver;
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp() throws InterruptedException {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.get("https://www.flipkart.com");
     }
 
     @AfterMethod
