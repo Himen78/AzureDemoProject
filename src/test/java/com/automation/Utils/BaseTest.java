@@ -17,7 +17,7 @@ public class BaseTest {
     public void setUp() throws InterruptedException {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
         driver.get("https://www.flipkart.com");
     }
 
